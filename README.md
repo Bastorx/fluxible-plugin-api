@@ -12,9 +12,9 @@ Install
 
 ```javascript
 
-import ApiPlugin from 'fluxible-plugin-api';
+import apiPlugin from 'fluxible-plugin-api';
 
-app.plug(ApiPlugin({
+app.plug(apiPlugin({
     apiUrl: {api-url}
 }));
 
@@ -26,7 +26,7 @@ Action Context
 ```javascript
 
 function loadUser(context, { userId }) {
-    return context.Api
+    return context.api
         .get(`/users/${userId}`)
         .then(user => context.dispatch('RECEIVE_USER', user));
 }
@@ -60,7 +60,7 @@ class UserStore extends BaseStore {
         const user = this.users[id];
 
         if (!user) {
-            this.getContext().Api.get(`/users/${userId}`).then(user => {
+            this.getContext().api.get(`/users/${userId}`).then(user => {
                 this.getContext().dispatch('RECEIVE_USER', user);
             });
         }
