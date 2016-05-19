@@ -2,20 +2,20 @@
 
 var Client = require('./client');
 
-function ApiPlugin(options) {
+function apiPlugin(options) {
     var options = options;
 
     return {
-        name: 'ApiPlugin',
+        name: 'apiPlugin',
         plugContext: function () {
             var client = new Client(options);
 
             return {
                 plugActionContext: function (actionContext) {
-                    actionContext.Api = client;
+                    actionContext.api = client;
                 },
                 plugStoreContext: function (storeContext) {
-                    storeContext.Api = client;
+                    storeContext.api = client;
                 }
             };
         },
@@ -28,4 +28,4 @@ function ApiPlugin(options) {
     };
 }
 
-module.exports = ApiPlugin;
+module.exports = apiPlugin;
