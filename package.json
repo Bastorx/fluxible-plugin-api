@@ -1,0 +1,27 @@
+{
+  "name": "fluxible-plugin-api",
+  "version": "0.1.0",
+  "description": "API for fluxible applications !!! Inspired from fluxible-plugin-hairfie-api",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Bastorx/fluxible-plugin-api.git"
+  },
+  "keywords": [
+    "fluxible",
+    "api",
+    "connector",
+    "plugin"
+  ],
+  "author": "Bastien Chevallier <cheval_b@etna-alternance.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bastorx/fluxible-plugin-api/issues"
+  },
+  "homepage": "https://github.com/Bastorx/fluxible-plugin-api",
+  "dependencies": {
+    "es6-promise": "^3.2.1",
+    "superagent": "^2.0.0-alpha.3"
+  }
+}
