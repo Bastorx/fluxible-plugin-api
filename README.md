@@ -1,3 +1,5 @@
+** This project is no more maintain, I prefer use redux now. If someone is interesting to maintain this project, let me know. **
+
 # fluxible-plugin-api
 
 Inspired by: https://github.com/Hairfie/fluxible-plugin-hairfie-api
